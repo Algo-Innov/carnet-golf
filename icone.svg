@@ -1,7 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" fill="#1f6b3a"/>
-  <ellipse cx="256" cy="398" rx="150" ry="34" fill="#2f8a4e"/>
-  <rect x="242" y="100" width="14" height="300" rx="7" fill="#ffffff"/>
-  <path d="M256 108 L384 152 L256 196 Z" fill="#f2c94c"/>
-  <circle cx="330" cy="388" r="20" fill="#ffffff"/>
+  <!-- Drapeau de golf planté sur un green. Tout le dessin tient dans le cercle sûr des icônes « maskable » (rayon 204 px). -->
+  <defs>
+    <linearGradient id="fond" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f7a46"/>
+      <stop offset="1" stop-color="#0f5130"/>
+    </linearGradient>
+    <radialGradient id="green" cx="0.5" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#7ccf95"/>
+      <stop offset="1" stop-color="#3a9c5c"/>
+    </radialGradient>
+    <linearGradient id="drapeau" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffcf3f"/>
+      <stop offset="1" stop-color="#ffe07a"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#fond)"/>
+  <circle cx="256" cy="236" r="196" fill="#ffffff" opacity="0.06"/>
+  <ellipse cx="256" cy="364" rx="164" ry="54" fill="url(#green)"/>
+  <ellipse cx="226" cy="366" rx="36" ry="12" fill="#0a3019"/>
+  <rect x="216" y="98" width="20" height="272" rx="10" fill="#ffffff"/>
+  <path d="M234 104 C 284 114 336 134 394 166 C 336 198 284 216 234 228 Z" fill="url(#drapeau)"/>
+  <circle cx="310" cy="354" r="18" fill="#ffffff"/>
 </svg>
